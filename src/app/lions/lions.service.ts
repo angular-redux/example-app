@@ -11,15 +11,7 @@ export class LionsService {
 
   getAll() {
     return this.http.get(LIONS_URL)
-      .map(r => {
-        console.log('1', r);
-        return r;
-      })
       .map(resp => resp.json())
-      .map(r => {
-        console.log('2', r);
-        return r;
-      })
       .map(records => records.map(
         record => ({
           animalType: record.type,
