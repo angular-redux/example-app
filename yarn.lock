@@ -123,6 +123,12 @@
   version "0.0.32"
   resolved "https://registry.yarnpkg.com/@types/q/-/q-0.0.32.tgz#bd284e57c84f1325da702babfc82a5328190c0c5"
 
+"@types/redux-logger@^2.6.34":
+  version "2.6.34"
+  resolved "https://registry.yarnpkg.com/@types/redux-logger/-/redux-logger-2.6.34.tgz#4f0201ce75cf7e35f3ea22cbeb71f20568e93262"
+  dependencies:
+    redux "^3.6.0"
+
 "@types/selenium-webdriver@2.53.37":
   version "2.53.37"
   resolved "https://registry.yarnpkg.com/@types/selenium-webdriver/-/selenium-webdriver-2.53.37.tgz#34f743c20e53ae7100ede90870fde554df2447f8"
@@ -4995,7 +5001,7 @@ readable-stream@1.0, readable-stream@~1.0.2:
     isarray "0.0.1"
     string_decoder "~0.10.x"
 
-readable-stream@^2.0.0, readable-stream@^2.1.0:
+readable-stream@^2.0.0, "readable-stream@^2.0.0 || ^1.1.13", readable-stream@^2.1.0:
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-2.2.2.tgz#a9e6fec3c7dda85f8bb1b3ba7028604556fc825e"
   dependencies:
@@ -5007,7 +5013,7 @@ readable-stream@^2.0.0, readable-stream@^2.1.0:
     string_decoder "~0.10.x"
     util-deprecate "~1.0.1"
 
-"readable-stream@^2.0.0 || ^1.1.13", readable-stream@^2.0.1, readable-stream@^2.0.2, readable-stream@^2.0.5, readable-stream@~2.0.0:
+readable-stream@^2.0.1, readable-stream@^2.0.2, readable-stream@^2.0.5, readable-stream@~2.0.0:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-2.0.6.tgz#8f90341e68a53ccc928788dacfcd11b36eb9b78e"
   dependencies:
@@ -5099,6 +5105,12 @@ reduce-function-call@^1.0.1:
 redux-logger@^2.6.1:
   version "2.7.4"
   resolved "https://registry.yarnpkg.com/redux-logger/-/redux-logger-2.7.4.tgz#891e5d29e7f111d08b5781a237b9965b5858c7f8"
+  dependencies:
+    deep-diff "0.3.4"
+
+redux-logger@^2.8.1:
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/redux-logger/-/redux-logger-2.8.1.tgz#c00e689ba00342f44858701d76b1d73fbade72bd"
   dependencies:
     deep-diff "0.3.4"
 
