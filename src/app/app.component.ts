@@ -14,7 +14,7 @@ import { LionsEpics } from './lions/lions.epics';
 import { lionsReducer } from './lions/lions.reducer';
 
 @Component({
-  selector: 'app-root',
+  selector: 'zoo-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })

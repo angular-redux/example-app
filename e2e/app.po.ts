@@ -6,6 +6,6 @@ export class ZooPage {
   }
 
   getParagraphText() {
-    return element(by.css('app-root h1')).getText();
+    return element(by.css('zoo-root h1')).getText();
   }
 }
