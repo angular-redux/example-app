@@ -1,11 +1,11 @@
 import { browser, element, by } from 'protractor';
 
-export class ZooPage {
+export class ExampleAppPage {
   navigateTo() {
     return browser.get('/');
   }
 
   getParagraphText() {
-    return element(by.css('zoo-root h1')).getText();
+    return element(by.css('app-root h1')).getText();
   }
 }
