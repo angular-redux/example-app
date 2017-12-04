@@ -13,13 +13,13 @@ export const toSubTotal = (obs$: Observable<IAnimal>): Observable<number> =>
  */
 @WithSubStore({
   basePathMethodName: 'getBasePath',
-  localReducer: animalComponentReducer,
+  localReducer: animalComponentReducer
 })
 @Component({
   selector: 'zoo-animal',
   templateUrl: './component.html',
   styleUrls: ['./component.css'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AnimalComponent {
   static readonly ADD_TICKET = 'ADD_TICKET';
@@ -28,14 +28,13 @@ export class AnimalComponent {
   @Input() key: string;
   @Input() animalType: string;
 
-  @select()                  readonly name$: Observable<string>;
-  @select('tickets')         readonly numTickets$: Observable<number>;
-  @select('ticketPrice')     readonly ticketPrice$: Observable<number>;
-  @select$(null, toSubTotal) readonly subTotal$: Observable<number>;
+  @select() readonly name$: Observable<string>;
+  @select('tickets') readonly numTickets$: Observable<number>;
+  @select('ticketPrice') readonly ticketPrice$: Observable<number>;
+  @select$(null as any, toSubTotal)
+  readonly subTotal$: Observable<number>;
 
-  getBasePath = () => this.key ?
-    [ this.animalType, 'items', this.key ] :
-    null;
+  getBasePath = () => (this.key ? [this.animalType, 'items', this.key] : null);
 
   @dispatch() addTicket = () => ({ type: 'ADD_TICKET' });
   @dispatch() removeTicket = () => ({ type: 'REMOVE_TICKET' });

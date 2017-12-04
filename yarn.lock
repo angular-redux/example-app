@@ -32,13 +32,13 @@
   dependencies:
     immutable "^3.8.1"
 
-"@angular-redux/router@^6.3.1":
-  version "6.3.1"
-  resolved "https://registry.yarnpkg.com/@angular-redux/router/-/router-6.3.1.tgz#847f790b3e3b2d1c8bdad4d4bf3068cd4e0fbf07"
+"@angular-redux/router@7.0.0-2":
+  version "7.0.0-2"
+  resolved "https://registry.yarnpkg.com/@angular-redux/router/-/router-7.0.0-2.tgz#281f35a0d66b1864b82fe6b14adac69c074ec198"
 
-"@angular-redux/store@7.0.0-1":
-  version "7.0.0-1"
-  resolved "https://registry.yarnpkg.com/@angular-redux/store/-/store-7.0.0-1.tgz#d102972314924730890df8ef94f20ccd73090019"
+"@angular-redux/store@7":
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/@angular-redux/store/-/store-7.0.0.tgz#06b4f5a7a6f99996f89bf0cf84a4f5a9a80a817e"
 
 "@angular/animations@^5.0.0":
   version "5.0.1"
@@ -993,9 +993,9 @@ code-point-at@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/code-point-at/-/code-point-at-1.1.0.tgz#0d070b4d043a5bea33a2f1a40e2edb3d9a4ccf77"
 
-codelyzer@~3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/codelyzer/-/codelyzer-3.0.1.tgz#ba66b7b2aa564fe9f45d6004b4003ad2cf116828"
+codelyzer@~4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/codelyzer/-/codelyzer-4.0.1.tgz#0bb4cf52a325b257790f4980bb3c63833db10789"
   dependencies:
     app-root-path "^2.0.1"
     css-selector-tokenizer "^0.7.0"

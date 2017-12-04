@@ -18,7 +18,7 @@ export class AnimalListComponent {
   // Since we're observing an array of items, we need to set up a 'trackBy'
   // parameter so Angular doesn't tear down and rebuild the list's DOM every
   // time there's an update.
-  getKey(_, animal: IAnimal) {
+  getKey(_: any, animal: IAnimal) {
     return animal.id;
   }
 }

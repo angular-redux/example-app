@@ -25,7 +25,7 @@ import { AppComponent } from './component';
     FormsModule,
     HttpModule,
     NgReduxModule,
-    NgReduxRouterModule,
+    NgReduxRouterModule.forRoot(),
     AnimalModule,
     ElephantModule,
     LionModule,

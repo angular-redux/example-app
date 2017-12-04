@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --preserve-symlinks",
     "build": "ng build",
     "test": "ng lint --type-check && ng test --single-run"
   },
@@ -14,8 +14,8 @@
   "private": true,
   "dependencies": {
     "@angular-redux/form": "^6.5.2",
-    "@angular-redux/router": "^6.3.1",
-    "@angular-redux/store": "7.0.0-1",
+    "@angular-redux/router": "7.0.0-2",
+    "@angular-redux/store": "7",
     "@angular/animations": "^5.0.0",
     "@angular/common": "^5.0.0",
     "@angular/compiler": "^5.0.0",
@@ -41,7 +41,7 @@
     "@types/jasmine": "2.5.47",
     "@types/node": "~6.0.71",
     "@types/redux-logger": "^3.0.0",
-    "codelyzer": "~3.0.1",
+    "codelyzer": "~4.0.1",
     "jasmine-core": "~2.6.1",
     "jasmine-spec-reporter": "~4.1.0",
     "karma": "~1.6.0",
