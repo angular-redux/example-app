@@ -7,7 +7,7 @@ export const ticketsReducer: Reducer<number> = (state = 0, action: Action): numb
     case AnimalComponent.REMOVE_TICKET: return Math.max(0, state - 1);
   }
   return state;
-}
+};
 
 // Basic reducer logic.
 export const animalComponentReducer: Reducer<any> = (state: any = {}, action: Action): {} => ({

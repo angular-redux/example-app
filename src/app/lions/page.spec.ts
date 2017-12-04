@@ -22,7 +22,7 @@ class MockAnimalListComponent {
   @Input() animals: Observable<any>;
   @Input() loading: Observable<boolean>;
   @Input() error: Observable<any>;
-};
+}
 
 describe('Lion Page Container', () => {
   beforeEach(() => {
@@ -46,7 +46,7 @@ describe('Lion Page Container', () => {
       }];
 
     const expectedSequence = [
-      [ { name: 'I am a Lion!', id: 'lion1' } ],
+      [{ name: 'I am a Lion!', id: 'lion1' }],
       [
         // Alphanumeric sort by name.
         { name: 'I am a Lion!', id: 'lion1' },
@@ -61,9 +61,9 @@ describe('Lion Page Container', () => {
     lionPage.animals$
       .toArray()
       .subscribe(
-        actualSequence => expect(actualSequence).toEqual(expectedSequence),
-        null,
-        done);
+      actualSequence => expect(actualSequence).toEqual(expectedSequence),
+      null,
+      done);
   });
 
   it('should know when the animals are loading', done => {
@@ -78,15 +78,15 @@ describe('Lion Page Container', () => {
     lionPage.loading$
       .toArray()
       .subscribe(
-        actualSequence => expect(actualSequence).toEqual([ false, true ]),
-        null,
-        done);
+      actualSequence => expect(actualSequence).toEqual([false, true]),
+      null,
+      done);
   });
 
   it('should know when there\'s an error', done => {
     const fixture = TestBed.createComponent(LionPageComponent);
     const lionPage = fixture.debugElement.componentInstance;
-    const expectedSequence = [ true ];
+    const expectedSequence = [true];
 
     const lionsErrorStub = MockNgRedux.getSelectorStub(['lion', 'error']);
     lionsErrorStub.next(false);
@@ -96,9 +96,9 @@ describe('Lion Page Container', () => {
     lionPage.error$
       .toArray()
       .subscribe(
-        actualSequence => expect(actualSequence).toEqual([ false, true ]),
-        null,
-        done);
+      actualSequence => expect(actualSequence).toEqual([false, true]),
+      null,
+      done);
   });
 
   it('should load lions on creation', () => {

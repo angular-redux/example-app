@@ -22,7 +22,7 @@ class MockAnimalListComponent {
   @Input() animals: Observable<any>;
   @Input() loading: Observable<boolean>;
   @Input() error: Observable<any>;
-};
+}
 
 describe('Elephant Page Container', () => {
   beforeEach(() => {
@@ -46,7 +46,7 @@ describe('Elephant Page Container', () => {
       }];
 
     const expectedSequence = [
-      [ { name: 'I am an Elephant!', id: 'elephant1' } ],
+      [{ name: 'I am an Elephant!', id: 'elephant1' }],
       [
         // Alphanumeric sort by name.
         { name: 'I am a second Elephant!', id: 'elephant2' },
@@ -61,9 +61,9 @@ describe('Elephant Page Container', () => {
     elephantPage.animals$
       .toArray()
       .subscribe(
-        actualSequence => expect(actualSequence).toEqual(expectedSequence),
-        null,
-        done);
+      actualSequence => expect(actualSequence).toEqual(expectedSequence),
+      null,
+      done);
   });
 
   it('should know when the animals are loading', done => {
@@ -78,9 +78,9 @@ describe('Elephant Page Container', () => {
     elephantPage.loading$
       .toArray()
       .subscribe(
-        actualSequence => expect(actualSequence).toEqual([ false, true ]),
-        null,
-        done);
+      actualSequence => expect(actualSequence).toEqual([false, true]),
+      null,
+      done);
   });
 
   it('should know when there\'s an error', done => {
@@ -95,9 +95,9 @@ describe('Elephant Page Container', () => {
     elephantPage.error$
       .toArray()
       .subscribe(
-        actualSequence => expect(actualSequence).toEqual([ false, true ]),
-        null,
-        done);
+      actualSequence => expect(actualSequence).toEqual([false, true]),
+      null,
+      done);
   });
 
   it('should load elephants on creation', () => {

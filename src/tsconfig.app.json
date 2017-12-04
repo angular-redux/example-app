@@ -1,29 +1,10 @@
 {
+  "extends": "../tsconfig.json",
   "compilerOptions": {
-    "sourceMap": true,
-    "declaration": false,
-    "moduleResolution": "node",
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "lib": [
-      "es2016",
-      "dom"
-    ],
     "outDir": "../out-tsc/app",
-    "target": "es5",
+    "baseUrl": "./",
     "module": "es2015",
-    "baseUrl": "",
-    "types": [],
-
-    // Causes problems for @Outputs. See https://github.com/angular/angular/issues/17131.
-    // "noUnusedParameters": true,
-    // "noUnusedLocals": true,
-
-    "forceConsistentCasingInFileNames": true,
-    "pretty": true
+    "types": []
   },
-  "exclude": [
-    "test.ts",
-    "**/*.spec.ts"
-  ]
+  "exclude": ["test.ts", "**/*.spec.ts"]
 }
